@@ -2,7 +2,6 @@
 """Create formula to return minimum number operations required to yeild n"""
 
 
-
 def minOperations(n):
 
     ops = 0
