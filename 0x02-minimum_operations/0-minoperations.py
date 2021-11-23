@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Create formula to return minimum number operations required to yeild n"""
 
-def minOperations(n):
 
+
+def minOperations(n):
 
     ops = 0
     cp = 2
