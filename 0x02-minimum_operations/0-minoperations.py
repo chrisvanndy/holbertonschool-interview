@@ -3,7 +3,9 @@
 
 def minOperations(n):
 
-  
+
+    ops = 0
+    cp = 2
     """Returns minimum number operations to yeild n
 
     Arguments:
@@ -12,9 +14,6 @@ def minOperations(n):
     cp: copy paste actions (2)
 
     Returns:  the total number of opertaions required to yield n"""
-
-    ops = 0
-    cp = 2
 
     # while looping, n divided down the accomodate chars left to print
     while n > 1:
