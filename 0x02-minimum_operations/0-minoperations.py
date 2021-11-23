@@ -2,6 +2,8 @@
 """Create formula to return minimum number operations required to yeild n"""
 
 def minOperations(n):
+
+  
     """Returns minimum number operations to yeild n
 
     Arguments:
@@ -23,7 +25,7 @@ def minOperations(n):
             # half n to account for characters still needed to print
             n /= cp
         else:
-          # if n is not a factor of 2, paste 1 try again.
+            # if n is not a factor of 2, paste 1 try again.
             cp += 1
 
     return ops
