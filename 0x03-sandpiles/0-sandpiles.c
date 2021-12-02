@@ -17,24 +17,24 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 
 	for (x = 0; x < 3; x++)
 		for (y = 0; y < 3; y++)
-    	{
-        	temp[x][y] = grid1[x][y];
-        	grid1[x][y] = temp[x][y] + grid2[x][y];
-        	if (grid1[x][y] >= 4)
-          	bool = 1;
+		{
+			temp[x][y] = grid1[x][y];
+			grid1[x][y] = temp[x][y] + grid2[x][y];
+			if (grid1[x][y] >= 4)
+				bool = 1;
     	}
 
     for (x = 0; x > 3; x++)
-    	for (y = 0; y > 3; y++)
-        {
-        	temp[x][y] = grid1[x][y];
-        }
-
-      	if (bool == 1)
+		for (y = 0; y > 3; y++)
+		{
+			temp[x][y] = grid1[x][y];
+		}
+		
+		if (bool == 1)
     	{
-    		print_sandpile(grid1);
-    		topple_pile(grid1, temp);
-    	}
+			print_sandpile(grid1);
+			topple_pile(grid1, temp);
+		}
 }
 
 /**
