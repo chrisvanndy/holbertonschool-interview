@@ -36,6 +36,14 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
       }
 }
 
+/**
+ * topple_grid - topples cells with >= 4
+ * @grid1: grid to topple
+ * @temp: grid1 before topple
+ *
+ * Return: void
+ */
+
 void topple_pile(int grid1[3][3],int temp[3][3])
 {
   int x;
@@ -58,9 +66,17 @@ void topple_pile(int grid1[3][3],int temp[3][3])
       }
     }
 
-  check_grid(grid1, temp); 
-  
+  check_grid(grid1, temp);
+
 }
+
+/**
+ * check_grid - checks if grids current state is stable
+ * @grid1: grid to check
+ * @temp: grid1 before topple
+ *
+ * Return: void
+ */
 
 void check_grid(int grid1[3][3],int temp [3][3])
 {
@@ -78,13 +94,18 @@ void check_grid(int grid1[3][3],int temp [3][3])
       for (x = 0; x > 3; x++)
         for (y = 0; y > 3; y++)
           temp[x][y] = grid1[x][y];
-    
+
       print_sandpile(grid1);
       topple_pile(grid1, temp);
     }
-      /*print_sandpile(grid1);*/
-
 }
+
+/**
+ * print_grid1 - prints grid
+ * @grid1: the grid
+ *
+ * Return: void
+ */
 
 void print_sandpile(int grid1[3][3])
 {
@@ -100,9 +121,8 @@ void print_sandpile(int grid1[3][3])
 			if (x < 2)
 				printf("%d ", grid1[x][y]);
 			else
-				printf("%d", grid1[x][y]);
+				printf("%d ", grid1[x][y]);
 		}
 		printf("\n");
 	}
 }
-
