@@ -100,7 +100,7 @@ void print_sandpile(int grid1[3][3])
 			if (x < 2)
 				printf("%d ", grid1[x][y]);
 			else
-				printf("%d ", grid1[x][y]);
+				printf("%d", grid1[x][y]);
 		}
 		printf("\n");
 	}
