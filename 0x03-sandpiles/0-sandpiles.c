@@ -38,14 +38,14 @@ topple_pile(grid1, temp);
 }
 
 /**
- * topple_grid - topples cells with >= 4
+ * topple_pile - topples cells with >= 4
  * @grid1: grid to topple
  * @temp: grid1 before topple
  *
  * Return: void
  */
 
-void topple_pile(int grid1[3][3],int temp[3][3])
+void topple_pile(int grid1[3][3], int temp[3][3])
 {
 int x;
 int y;
@@ -78,7 +78,7 @@ check_grid(grid1, temp);
  * Return: void
  */
 
-void check_grid(int grid1[3][3],int temp [3][3])
+void check_grid(int grid1[3][3], int temp [3][3])
 {
 int x, y, bool = 0;
 
@@ -101,7 +101,7 @@ topple_pile(grid1, temp);
 }
 
 /**
- * print_grid1 - prints grid
+ * print_sandpile - prints grid
  * @grid1: the grid
  *
  * Return: void
