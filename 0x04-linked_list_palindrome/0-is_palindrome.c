@@ -10,7 +10,7 @@
 
 int is_palindrome(listint_t **head)
 {
-	// if list is empty return 1
+	/*if list is empty return 1 */
 	if (!head || !*head)
 		return (1);
 	
