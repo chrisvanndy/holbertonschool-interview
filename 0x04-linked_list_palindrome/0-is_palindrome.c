@@ -19,7 +19,7 @@ int is_palindrome(listint_t **head)
 
 
 /**
-* pali_helper - helper function determines if linked list is palindrome
+* pali_helper - helper determines if linked list is palindrome
 * @left: left most node in list
 * @right: right most node in list (reverse comparision via recursion)
 * a list is considered a palindrome if empty
