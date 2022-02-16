@@ -9,5 +9,4 @@
 void menger(int level);
 int main(int ac, char **av);
 
-
 #endif /* MENGER_H */
