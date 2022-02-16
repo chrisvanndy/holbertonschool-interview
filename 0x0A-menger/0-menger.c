@@ -16,8 +16,10 @@ void menger(int level)
 		return;
 
 	if (level == 0)
+	{
 		printf("#\n");
 		return;
+	}
 
 
 	for (a = 0; a < pow(3, level); ++a)
