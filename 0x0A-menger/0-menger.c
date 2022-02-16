@@ -3,7 +3,7 @@
 /**
  * menger - function prints menger sponge at N^3 level
  *
- * @level - level to extract center of cube
+ * @level: - level to extract center of cube
  *
  * Return: void
  */
@@ -17,6 +17,7 @@ void menger(int level)
 
 	if (level == 0)
 		printf("#\n");
+		return;
 
 
 	for (a = 0; a < pow(3, level); ++a)
