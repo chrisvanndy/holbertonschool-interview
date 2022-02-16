@@ -7,6 +7,6 @@
 #include <stdbool.h>
 
 void menger(int level);
-int main(int ac, char **av);
+int main(void);
 
 #endif /* MENGER_H */
