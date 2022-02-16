@@ -18,13 +18,18 @@ int is_palindrome(unsigned long n)
 
     while (num > 0)
     {
+        /* remove last digit from n */
         digit = num % 10;
         /* printf("%d.) %d \n", i, digit); */
+
+        /* add zero to end rev then add digit */
         rev = rev * 10 + digit;
         /* printf("%d.) %lu \n", i, rev); */
+
+        /* remove the last digit from num */
         num = num / 10;
-        /* printf("%d.) %lu \n", i,n); */
-        /* i++; */ 
+        /* printf("%d.) %lu \n", i, num); */
+        /* i++; */
     }
     
     if (n == rev)
