@@ -1,4 +1,4 @@
-#!/usr/bin/pmax_comparethon3
+#!/usr/bin/python3
 """Determines the amount of cubic rainwater collected within a contained area"""
 
 def rain(walls):
