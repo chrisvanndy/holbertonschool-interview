@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""Module containts the rotate_2d_matrix() function"""
 
 def rotate_2d_matrix(matrix):
-  """this function rotates a 2D matrix of size n x n"""
+  """Transposes and reverses a 2D matrix of size n x n"""
+  """Rotates the matrix 90 degrees in the clockwise direction"""
 
   # Transpose matrix rows and columns 
   # define matrix row length for iteration
