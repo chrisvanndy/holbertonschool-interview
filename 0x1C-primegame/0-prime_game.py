@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Let's play a 'Prime' Game"""
 
 def allPrimes(x):
     """Returns list of prime numbers up to given parameter, in ascending order.
